@@ -1,8 +1,3 @@
-// import functions and grab DOM elements
-
-// initialize global state
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const catImg = document.getElementById('cat-img');
+const dogImg = document.getElementById('dog-img');
+const horseImg = document.getElementById('horse-img');
