@@ -35,12 +35,13 @@ horseImg.addEventListener('click', () =>{
 
 });
 
+//was trying to figure out the key press thing...
 
 //const keyA = document.dispatchEvent(new KeyboardEvent ('keypress,', { 'key': 'a' }));
 
 //const keyA = document.addEventListener('keydown', () => { console.log('test')})
 
-    // eslint-disable-next-line no-empty
+    
 //if( keyA.textContent === 'a'){
  // let catAudio = document.getElementById('cat-sound');
    //// catAudio.play();
