@@ -1,10 +1,20 @@
+body{
+    background-image: url(../assets/water-mer.jpeg);
+    background-size: cover;
+}
+
+
+
+
+
 .animals img{
     display: flex;
     justify-content: center;
     height:20rem;
     width: 15rem;
-    border: solid black 2px;
+    border: solid#AAED85 4px;
     margin: 20px;
+    border-radius: 100%;
 }
 
 .animals{
@@ -13,24 +23,47 @@
     margin:10rem;
 
 }
+img:hover{
+    color: green ;
+    opacity: 50%;
+
+}
 
 h1{
     display: flex;
     justify-content: center;
+    color:#AAED85;
     text-align: center;
     font-size: 5rem;
-    color:green;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
     
+
 }
 
 
 .animated{
-    animation-name:jumpy;
-};
-
+    animation: spin 1s;
+}
+.animated-dog{
+    animation: jumpy 1s;
+}
+.animated-horse{
+    animation: sad 4s;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+}
 @keyframes jumpy {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
-};
+}
+@keyframes sad {
+    0%  {transform: translateY(0);}
+    40% {transform: translateY(30px);}
+    50% {transform: rotate(-80deg);}
+    60% {transform: translateY(45px);}
+    100% {transform: translateY(50px);}
+    100% {transform: rotate(-95deg);}
+}
